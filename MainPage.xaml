@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TelceanLorenaAlexiaLab7.MainPage"
+             Title="Personalized Main Page">
+
+    <VerticalStackLayout 
+        Spacing="10" Margin="10" VerticalOptions="Center" HorizontalOptions="Center">
+        <!-- Imagine personalizată -->
+        <Image Source="christmasimage.jpg" HeightRequest="150" SemanticProperties.Description="My Personal Image" />
+
+        <!-- Text personalizat -->
+        <Label
+            Text="Bine ai venit în aplicația mea!" 
+               FontSize="24" 
+               HorizontalTextAlignment="Center" 
+               TextColor="MediumPurple" />
+
+        <Label Text="Ma numesc Telcean Lorena Alexia si aceasta este pagina mea principală personalizată."
+               FontSize="16"
+               HorizontalTextAlignment="Center"
+               Margin="10,0,10,0" />
+        <Button
+               x:Name="CounterBtn"
+               Text="Click me!"
+               Clicked="OnCounterClicked"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+    </VerticalStackLayout>
+ 
+
+</ContentPage>
