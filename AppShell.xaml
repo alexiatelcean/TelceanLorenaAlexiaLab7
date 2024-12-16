@@ -9,17 +9,22 @@
 
     <TabBar>
         <ShellContent
- Title="Shopping Lists"
+ Title="Welcome"
  ContentTemplate="{DataTemplate local:MainPage}"
+ />
+
+        <ShellContent
+ Title="My Shopping Lists"
+ ContentTemplate="{DataTemplate local:ListEntryPage}"
+ />
+        <ShellContent
+ Title="My Shops"
+ ContentTemplate="{DataTemplate local:ShopPage}"
  />
         <ShellContent
  Title="About"
  ContentTemplate="{DataTemplate local:AboutPage}"
  />
-        <ShellContent
- Title="My Shopping Lists"
- ContentTemplate="{DataTemplate local:ListEntryPage}"
- />
     </TabBar>
 
 </Shell>
